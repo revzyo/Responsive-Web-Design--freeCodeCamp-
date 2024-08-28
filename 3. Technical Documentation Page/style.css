@@ -1,0 +1,140 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    line-height: 1.3rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    color: white;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+  .navbar-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 10px 0 10px 10px;
+  }
+  
+  .nav-link {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: white;
+    transition: background-color 0.3s;
+    position: relative;
+  }
+  
+  a {
+    border-top: 1px solid white;
+    padding: 10px;
+  }
+  
+  a:last-child {
+    border-bottom: 1px solid white;
+  }
+  
+  .nav-link:hover {
+    background-color: #555;
+  }
+  
+  main {
+    margin-left: 200px; /* Adjust to match nav width */
+    padding: 20px;
+  }
+  
+  .main-section {
+    margin-bottom: 40px;
+  }
+  
+  header {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  span {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: underline;
+  }
+  
+  .code-caveat {
+    font-weight: normal;
+    font-size: 0.75rem;
+    text-decoration: none;
+    font-style: italic;
+  }
+  
+  code {
+    display: block;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    margin: 20px 0;
+    padding: 15px;
+  }
+  
+  li {
+    margin: 10px 0 5px 20px;
+    list-style: circle;
+  }
+  
+  @media only screen and (max-width: 720px) {
+    nav {
+      width: 100%;
+      height: auto; /* Adjust height to fit content */
+      position: relative; /* Make the nav bar scroll with content */
+      overflow-y: visible; /* Make sure it's visible on smaller screens */
+    }
+  
+    .navbar-header {
+      font-size: 1.2em;
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .nav-link {
+      padding: 15px;
+      border-top: none; /* Remove top border */
+    }
+  
+    a:last-child {
+      border-bottom: none; /* Remove bottom border */
+    }
+  
+    main {
+      margin-left: 0; /* Remove left margin for small screens */
+      padding: 10px;
+    }
+  
+    header {
+      font-size: 1.5em;
+    }
+  
+    code {
+      font-size: 0.9em;
+    }
+  
+    li {
+      margin: 5px 0;
+    }
+  }
